@@ -6,20 +6,26 @@ import pandas as pd
 model = joblib.load("house_price_model.pkl")
 st.title("🏠 House Price Prediction")
 #inputs 
-area = st.number_input("Area (sq ft)", min_value=0, step=1,key="area_input")
-bedrooms = st.number_input("Bedrooms", min_value=0, step=1,key="bedroom")
-bathrooms = st.number_input("Bathrooms", min_value=0, step=1,key="bathrooms")
-stories = st.number_input("Stories", min_value=0, step=1,key="stories")
-parking = st.number_input("Parking", min_value=0, step=1,key="parking")
-mainroad=st.selectbox("Mainroad",["Select", "Yes","No"],key="mainroad")
-guestroom=st.selectbox("Guestroom",["Select", "Yes","No"],key="guestroom")
-basement=st.selectbox("Basement",["Select", "Yes","No"],key="basement")
-hotwaterheating=st.selectbox("Hot water heating",["Select", "Yes","No"],key="hot water heating")
-airconditioning=st.selectbox("Air conditioning",["Select", "Yes","No"],key="airconditioning")
-prefarea=st.selectbox("Prefarea",["Select", "Yes","No"],key="prefarea")
-furnishingstatus=st.selectbox("Furnishingstatus",["Select", "Unfurnished","Semi-Furnished","Furnished"],key="furnishingstatus")
+col1, col2 = st.columns(2)
 
-#encoding 
+with col1:
+    area = st.number_input("Area (sq ft)", min_value=0, step=1)
+    bathrooms = st.number_input("Bathrooms", min_value=0, step=1)
+    parking = st.number_input("Parking", min_value=0, step=1)
+    guestroom = st.selectbox("Guestroom", ["Select", "Yes", "No"])
+    hotwaterheating = st.selectbox("Hot Water Heating", ["Select", "Yes", "No"])
+    furnishingstatus = st.selectbox(
+        "Furnishing Status",
+        ["Select", "Unfurnished", "Semi-Furnished", "Furnished"]
+    )
+
+with col2:
+    bedrooms = st.number_input("Bedrooms", min_value=0, step=1)
+    stories = st.number_input("Stories", min_value=0, step=1)
+    mainroad = st.selectbox("Mainroad", ["Select", "Yes", "No"])
+    basement = st.selectbox("Basement", ["Select", "Yes", "No"])
+    airconditioning = st.selectbox("Air Conditioning", ["Select", "Yes", "No"])
+    prefarea = st.selectbox("Prefarea", ["Select", "Yes", "No"])
 
 
 if st.button("Predict", key="predict_button"):
