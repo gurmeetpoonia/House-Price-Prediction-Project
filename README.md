@@ -40,21 +40,11 @@ This project uses a **Linear Regression model** trained on housing data to predi
 - R² Score approx: 0.6 - 0.7
 
 ---
-
-## 🚀 How to Run Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-
-👨‍💻 Author
+##👨‍💻 Author
 
 Gurmeet Punia
 
-
----
-
-# 🌐 4. GitHub Upload Commands
+## 🌐 4. GitHub Upload Commands
 
 ```bash id="git2"
 git init
@@ -63,3 +53,16 @@ git commit -m "House Price Prediction Project"
 git branch -M main
 git remote add origin https://github.com/your-username/your-repo.git
 git push -u origin main
+
+
+---
+## 🚀 How to Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+
+
+
+---
+
