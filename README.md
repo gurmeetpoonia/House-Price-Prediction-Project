@@ -3,7 +3,7 @@
 This is a Machine Learning project that predicts house prices based on different features like area, bedrooms, bathrooms, and more.
 
 ## 🚀 Live App
-👉 https://your-streamlit-link.streamlit.app
+👉(https://house-price-prediction-project-grngp.streamlit.app/)
 
 ---
 
