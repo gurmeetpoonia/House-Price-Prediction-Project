@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import numpy as np 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -32,7 +32,6 @@ model.fit(X_train,y_train)
 #print(accurany)
 
 joblib.dump(model,"house_price_model.pkl")
-=======
 import numpy as np 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -66,5 +65,4 @@ model.fit(X_train,y_train)
 #print(accurany)
 
 joblib.dump(model,"house_price_model.pkl")
->>>>>>> f545ffe56256d4c4150ce4bebb018672f51d0e2c
 print("model successfully saved") 

@@ -1,12 +1,6 @@
-<<<<<<< HEAD
+
 streamlit
 pandas
 numpy
 scikit-learn
-=======
-streamlit
-pandas
-numpy
-scikit-learn
->>>>>>> f545ffe56256d4c4150ce4bebb018672f51d0e2c
 joblib

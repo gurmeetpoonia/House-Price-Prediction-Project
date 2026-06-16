@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 import joblib
 import numpy as np 
@@ -95,7 +95,6 @@ if st.button("Predict"):
         
         prediction = model.predict(input_data)
 
-=======
 import streamlit as st
 import joblib
 import numpy as np 
@@ -191,6 +190,4 @@ if st.button("Predict"):
         )
         
         prediction = model.predict(input_data)
-
->>>>>>> f545ffe56256d4c4150ce4bebb018672f51d0e2c
         st.success(f"🏠 Estimated House Price: ₹{prediction[0]:,.0f}")
